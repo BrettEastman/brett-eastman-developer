@@ -8,7 +8,7 @@
 			href: 'https://github.com/BrettEastman/RankedChoice',
 			icon: 'fa-solid fa-check-to-slot',
 			description:
-				'The Ranked Choice Voting Calculator is a single page web application designed to facilitate the tally of a ranked choice vote involving 3-5 candidates and up to 20 voters. This voting method entails each voter designating their top 3 candidates in sequential order of preference. The tool aggregates these preferences, and if a candidate garners more than 50% of the total vote, they are declared the winner. In instances where no candidate achieves this, the candidate with the least support is eliminated. Votes initially cast for the eliminated candidate as the first choice are then reallocated to the respective second choice. This process iterates until a candidate secures a majority.',
+				'The Ranked Choice Voting Calculator is a single page web application designed to facilitate the tally of a ranked choice vote involving 3-5 candidates and up to 20 voters. I originally came up with this idea to solve a problem. My friends and I have a music listening group where we use ranked-choice voting to decide what album we will listen to together. I chose Svelte as the framework because of its small bundle size and fast load times. I used Vite as the bundler because of its speed and ease of use. I also used Tailwind for styling because of its utility-first approach.',
 			technologies: 'Svelte, Vite, TypeScript, Tailwind',
 			image: 'images/RCVC-display.png'
 		},
@@ -37,7 +37,7 @@
 			href: 'https://github.com/BrettEastman/Harper-Woodward',
 			icon: 'fa-solid fa-guitar',
 			description:
-				'Harper Woodward is a web application for holding live stream concerts with live chat between the viewers and the artist. The app requires authentication and is a secure space for the artist to connect with their audience in an intimate live setting. As Project Manager, I led a team of 7 engineers through critical decisions regarding DBMS, schema design, authentication, project architecture, Git workflows, and division of labor.',
+				'Harper Woodward is a web application for holding live stream concerts with live chat between the viewers and the artist. The app requires authentication and is a secure space for the artist to connect with their audience in an intimate live setting. As Project Manager and Full Stack Developer, I brought a team of 7 engineers through critical decisions regarding DBMS, project architecture, authentication, Git workflows, and division of labor, while at the same time implementing and desiging the Firebase authentication UI.',
 			technologies: 'Vite, React, Node.js, Firebase, Tailwind',
 			image: 'images/Harper-display.png'
 		}
@@ -48,24 +48,24 @@
 		href: 'https://github.com/sfbrigade/compass',
 		icon: 'fa-solid fa-diagram-project',
 		description:
-			"I have been a volunteer Full Stack Software Engineer at Code For San Francisco since April, 2023. We are currently working on Project Compass, which is a web application to streamline the process of setting and recording Individual Educational Plan (IEP) data for students with disabilities, for the San Francisco Unified School District (SFUSD). I have been personally responsible for implementing a feature to the project, using Nodemailer, to automatically send confirmation emails to new paraprofessionals as they are added to the database by the teacher. I also engineered the design team's designs for the Student page and Staff page, implementing a feature to allow teachers to add new students to their caseloads.",
+			"As a volunteer Full Stack Software Engineer at Code For San Francisco, I am on a team of developers and designers, currently working on Project Compass, which is a web application to streamline the process of setting and recording Individual Educational Plan (IEP) data for students with disabilities, for the San Francisco Unified School District (SFUSD). I was responsible for implementing a feature to the project, using Nodemailer, to automatically send confirmation emails to new para-professionals as they are added to the database by the teacher. I also engineered the design team's designs for the Student page and Staff page, implementing the backend procedures to allow teachers to add/edit/remove students and paras.",
 		technologies: 'Next.js, TRPC, Typescript, Postgres, Keysely, Zod, Figma, MaterialUI, Ava',
 		image: 'images/ProjectCompass-display.png'
 	};
 
 	let benefits = [
 		{
-			name: 'A Full Stack Developer',
+			name: 'a full stack developer',
 			description:
-				"I have a passion for building things and solving problems. I love to learn and I'm always looking for new opportunities to grow. I have a unique perspective that contributes to my approach to solving complex engineering problems. But, more importantly, I have grit and determination."
+				'I have a passion for building things and solving problems. I love to learn and I am always looking for new opportunities to grow. I have a unique perspective that contributes to my approach to solving complex engineering problems. But, more importantly, I have grit and determination.'
 		},
 		{
-			name: 'An excellent communicator',
+			name: 'an excellent communicator',
 			description:
-				'Communication is key. I believe in positive reinforcement, transparency and constructive communication. This helps develop effective and productive relationships in any work space with any team. When colleagues have a good rapport, they want to get the job done. Everyone wants to support and help the team succeed because they like the team.'
+				'Communication is key. I believe in positive reinforcement, transparency and constructive communication. This helps develop effective and productive relationships in the work space. When colleagues have a good rapport, they want to get the job done. They want the team succeed because they like the team.'
 		},
 		{
-			name: 'Musician',
+			name: 'a musician',
 			description:
 				'My journey into the world of software engineering did not follow a traditional path. I embarked on this transformation after having previously established myself as a musician, composer, recording engineer, and teacher. This artistic foundation has instilled in me the power of creativity, which enables me to envision innovative solutions to technical challenges.'
 		}
