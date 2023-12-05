@@ -81,8 +81,8 @@
 		<div class="relative grid place-items-center">
 			<img
 				class="object-cover z-[2] max-h-[45vh] rounded-3xl"
-				src={'images/P1002198.JPG'}
-				alt="Brett Eastman profile"
+				src={'images/Brett-headshot.jpeg'}
+				alt="Brett Eastman profile headshot"
 			/>
 		</div>
 		<div class="flex flex-col lg:justify-center tex-center lg:text-left gap-6 md:gap-8 lg:gap-10">
@@ -176,7 +176,7 @@
 				about <span class="noto text-peach">me?</span>
 			</h3>
 		</div>
-		<p class="mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am a...</p>
+		<p class="mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am ...</p>
 		<div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
 			{#each benefits as benefit, index}
 				<div class="flex gap-6 mx-4 sm:gap-8">
@@ -191,14 +191,12 @@
 			{/each}
 		</div>
 		<div class="flex justify-between">
-			<div
-				class="m-auto p-4 rounded-xl border border-peachGrey border-2 text-peachGrey cursor-pointer hover:text-primary10 duration-200 relative after:absolute after:top-0 after:h-0 after:right-full after:w-full after:h-full after:bg-peachGrey after:duration-300 hover:after:translate-x-full after:z-[-1] overflow-hidden"
-			>
+			<div class="button-div">
 				<a
 					href="https://drive.google.com/file/d/1CNaNL7DbyMY5GFe37VaYBC_wNFruFRKB/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="relative z-4">Download Resume</a
+					class="text-lg px-4 relative z-4">Resume</a
 				>
 			</div>
 		</div>
@@ -208,5 +206,37 @@
 <style>
 	#hero {
 		background: radial-gradient(var(--peach), 85%, var(--primary40));
+	}
+	.button-div {
+		margin: auto;
+		padding: 1rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--peachGrey);
+		color: var(--peachGrey);
+		cursor: pointer;
+		transition-duration: 200ms;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.button-div::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 100%;
+		right: 100%;
+		width: 102%;
+		background-color: var(--peachGrey);
+		transition-duration: 300ms;
+		z-index: -1;
+	}
+
+	.button-div:hover {
+		color: var(--primary10);
+		font-weight: 600;
+	}
+
+	.button-div:hover::after {
+		transform: translateX(100%);
 	}
 </style>
