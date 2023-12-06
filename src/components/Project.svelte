@@ -23,11 +23,42 @@
 			<strong class="text-peach">{project.technologies}</strong>
 		</div>
 		<div class="flex justify-between">
-			<div
-				class="ml-auto p-2 rounded-xl cursor-pointer hover:text-primary10 duration-200 relative after:absolute after:top-0 after:h-0 after:right-full after:w-full after:h-full after:bg-peachGrey after:duration-300 hover:after:translate-x-full after:z-[-1] overflow-hidden"
-			>
+			<div class="button-div">
 				<p class="relative z-4">View code &rarr;</p>
 			</div>
 		</div>
 	</a>
 </div>
+
+<style>
+	.button-div {
+		margin-left: auto;
+		padding: 0.75rem;
+		border-radius: 0.75rem;
+		cursor: pointer;
+		transition-duration: 200ms;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.button-div::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 100%;
+		right: 100%;
+		width: 102%;
+		background-color: var(--peachGrey);
+		transition-duration: 300ms;
+		z-index: -1;
+	}
+
+	.button-div:hover {
+		color: var(--primary10);
+		font-weight: 600;
+	}
+
+	.button-div:hover::after {
+		transform: translateX(100%);
+	}
+</style>
