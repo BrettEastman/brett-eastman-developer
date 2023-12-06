@@ -6,8 +6,6 @@
 		{ name: 'ABOUT', link: '#about' },
 		{ name: 'CONTACT', link: 'https://www.linkedin.com/in/brett-austin-eastman/' }
 	];
-
-	// Looking for an element with a certain ID number that is in view, then change the header left side to indicate the section we are in
 </script>
 
 <header

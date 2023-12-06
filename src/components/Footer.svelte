@@ -1,9 +1,9 @@
 <footer>
 	<a
-		href="https://gitlab.com/BrettEastman/bretteastmandeveloper"
+		href="https://github.com/BrettEastman/brett-eastman-developer"
 		rel="noreferrer"
 		target="_blank"
-		class="text-sm p-2 text-peach hover:text-greyPeach">View source code</a
+		class="text-sm p-2 pb-8 text-peach hover:text-greyPeach">View source code</a
 	>
 	<div
 		class="bg-primary10 border-t border-solid border-blueGrey flex justify-end gap-4 sm:pb-12 sm:gap-8"
