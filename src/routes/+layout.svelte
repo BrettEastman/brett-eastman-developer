@@ -1,7 +1,11 @@
 <script>
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
 	import '../app.css';
 	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
+
+	inject({ mode: dev ? 'development' : 'production' });
 
 	let y = 0;
 	let innerHeight = 0;

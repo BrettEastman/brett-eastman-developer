@@ -1,9 +1,9 @@
 <script>
+	import benefits from '$lib/benefits.js';
+	import projectCompass from '$lib/projectCompass.js';
+	import projects from '$lib/projects.js';
 	import Project from '../components/Project.svelte';
 	import Title from '../components/Title.svelte';
-	import projects from '$lib/projects.js';
-	import projectCompass from '$lib/projectCompass.js';
-	import benefits from '$lib/benefits.js';
 </script>
 
 <main class="flex flex-col flex-1">
