@@ -1,12 +1,13 @@
 export default [
 	{
-		name: 'Ranked Choice',
-		href: 'https://github.com/BrettEastman/RankedChoice',
-		icon: 'fa-solid fa-check-to-slot',
+		name: 'Dinomite Designs',
+		href: 'https://github.com/BrettEastman/Dinomite-Designs',
+		icon: 'fa-brands fa-pied-piper-hat',
 		description:
-			'The Ranked Choice Voting Calculator is a single page web application designed to facilitate the tally of a ranked choice vote involving 3-5 candidates and up to 20 voters. I originally came up with this idea to solve a problem. My friends and I have a music listening group where we use ranked-choice voting to decide what album we will listen to together. I chose Svelte as the framework because of its small bundle size and fast load times. I used Vite as the bundler because of its speed and ease of use. I also used Tailwind for styling because of its utility-first approach.',
-		technologies: 'Svelte, Vite, TypeScript, Tailwind',
-		image: 'images/RCVC-display.png'
+			"Dinomite Designs is a Full Stack project where my team redesigned and optimized a retail website's product portal including details, Q&A, reviews and recommendations. I leveraged React context for simplified state management and component architecture. On the backend, I enhanced performance through SQL and JavaScript query optimizations, reducing HTTP durations by 25%. I implemented load balancing across multiple AWS EC2 instances with NGINX to achieve 12ms response time per query at 1000rps throughput with 0% errors. This project exemplifies not only my frontend UX skills, but also my performance-focused approach to the backend, applying data caching, query optimizations, cloud scaling and load testing to significantly improve customer experience.",
+		technologies:
+			'Webpack, React, Node.js, PostgreSQL, AWS, Express, NGINX, Jest, K6, Loader.io, New Relic',
+		image: 'images/Dinomite-display.png'
 	},
 	{
 		name: 'Listening Roulette',
@@ -19,14 +20,13 @@ export default [
 		image: 'images/ListeningRoulette-display.png'
 	},
 	{
-		name: 'Dinomite Designs',
-		href: 'https://github.com/BrettEastman/Dinomite-Designs',
-		icon: 'fa-brands fa-pied-piper-hat',
+		name: 'Ranked Choice',
+		href: 'https://github.com/BrettEastman/RankedChoice',
+		icon: 'fa-solid fa-check-to-slot',
 		description:
-			"Dinomite Designs is a Full Stack project where my team redesigned and optimized a retail website's product portal including details, Q&A, reviews and recommendations. I leveraged React context for simplified state management and component architecture. On the backend, I enhanced performance through SQL and JavaScript query optimizations, reducing HTTP durations by 25%. I implemented load balancing across multiple AWS EC2 instances with NGINX to achieve 12ms response time per query at 1000rps throughput with 0% errors. This project exemplifies not only my frontend UX skills, but also my performance-focused approach to the backend, applying data caching, query optimizations, cloud scaling and load testing to significantly improve customer experience.",
-		technologies:
-			'Webpack, React, Node.js, PostgreSQL, AWS, Express, NGINX, Jest, K6, Loader.io, New Relic',
-		image: 'images/Dinomite-display.png'
+			'The Ranked Choice Voting Calculator is a single page web application designed to facilitate the tally of a ranked choice vote involving 3-5 candidates and up to 20 voters. I originally came up with this idea to solve a problem. My friends and I have a music listening group where we use ranked-choice voting to decide what album we will listen to together. I chose Svelte as the framework because of its small bundle size and fast load times. I used Vite as the bundler because of its speed and ease of use. I also used Tailwind for styling because of its utility-first approach.',
+		technologies: 'Svelte, Vite, TypeScript, Tailwind',
+		image: 'images/RCVC-display.png'
 	},
 	{
 		name: 'Harper Woodward',

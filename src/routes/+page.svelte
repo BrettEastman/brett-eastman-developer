@@ -6,7 +6,7 @@
 	import Title from '../components/Title.svelte';
 </script>
 
-<main class="flex flex-col flex-1">
+<main class="flex flex-col flex-1 scroller">
 	<section id="hero" class="z-[-1]">
 		<Title />
 	</section>
@@ -143,6 +143,7 @@
 	#hero {
 		background: radial-gradient(var(--peach), 85%, var(--primary40));
 	}
+
 	.button-div {
 		margin: auto;
 		padding: 1rem;
