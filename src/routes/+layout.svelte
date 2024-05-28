@@ -26,7 +26,7 @@
 		>
 			<button
 				on:click={goToTop}
-				class="ml-auto rounded-full aspect-square bg-primary10 text-peach px-4 hover:bg-primary80 duration-300 cursor-pointer"
+				class="ml-auto rounded-full aspect-square bg-primary10 text-peach px-4 hover:bg-primary80 duration-300"
 			>
 				<i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
 			</button>

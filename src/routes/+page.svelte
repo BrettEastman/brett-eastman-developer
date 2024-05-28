@@ -1,7 +1,7 @@
-<script>
-	import benefits from '$lib/benefits.js';
-	import projectCompass from '$lib/projectCompass.js';
-	import projects from '$lib/projects.js';
+<script lang="ts">
+	import benefits from '$lib/benefits';
+	import experiences from '$lib/experiences';
+	import projects from '$lib/projects';
 	import Project from '../components/Project.svelte';
 	import Title from '../components/Title.svelte';
 </script>
@@ -48,15 +48,15 @@
 		<h2
 			class="font-normal m-auto text-primary80 text-2xl mt-12 sm:text-3xl md:text-4xl lg:text-5xl"
 		>
-			PROJECTS
+			EXPERIENCE
 		</h2>
 		<h2
 			class="font-normal text-primary70 text-xl ml-12 mt-4 sm:text-2xl md:text-3xl lg:text-4xl lg:ml-20"
 		>
-			Freelance
+			Professional
 		</h2>
 		<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
-			{#each projects as project, index}
+			{#each experiences as experience, index}
 				<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
 					<div
 						class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
@@ -66,34 +66,37 @@
 							<h3
 								class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
 							>
-								{project.name}
+								{experience.name}
 							</h3>
 						</div>
 					</div>
-					<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
-					<Project {project} />
+					<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					<Project project={experience} />
 				</div>
 			{/each}
-		</div>
-		<h2 class="font-normal text-primary70 text-xl ml-12 mt-8 sm:text-2xl md:text-3xl lg:text-4xl">
-			Volunteer
-		</h2>
-		<div class="ml-2 gap-24 sm:ml-12">
-			<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
-				<div
-					class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
-				>
-					<div class="w-full h-full relative flex items-center justify-center">
-						<p class="absolute top-0 left-0 text-primary60">05.</p>
-						<h3
-							class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
+
+			<h2 class="font-normal text-primary70 text-xl ml-12 mt-8 sm:text-2xl md:text-3xl lg:text-4xl">
+				Projects
+			</h2>
+			<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
+				{#each projects as project, index}
+					<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
+						<div
+							class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
 						>
-							{projectCompass.name}
-						</h3>
+							<div class="w-full h-full relative flex items-center justify-center">
+								<p class="absolute top-0 left-0 text-primary60">0{index + 1}.</p>
+								<h3
+									class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
+								>
+									{project.name}
+								</h3>
+							</div>
+						</div>
+						<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+						<Project {project} />
 					</div>
-				</div>
-				<img class="object-cover rounded-xl" src={projectCompass.image} alt={projectCompass.name} />
-				<Project project={projectCompass} />
+				{/each}
 			</div>
 		</div>
 	</section>
