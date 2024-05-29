@@ -1,7 +1,7 @@
-<script>
-	import benefits from '$lib/benefits.js';
-	import projectCompass from '$lib/projectCompass.js';
-	import projects from '$lib/projects.js';
+<script lang="ts">
+	import benefits from '$lib/benefits';
+	import experiences from '$lib/experiences';
+	import projects from '$lib/projects';
 	import Project from '../components/Project.svelte';
 	import Title from '../components/Title.svelte';
 </script>
@@ -44,19 +44,19 @@
 		</div>
 	</section>
 
-	<section id="projects" class="py-8 flex flex-col gap-4 md:gap-16 md:py-20 lg:py-32">
+	<section id="experience" class="py-8 flex flex-col gap-4 md:gap-16 md:py-20 lg:py-32">
 		<h2
 			class="font-normal m-auto text-primary80 text-2xl mt-12 sm:text-3xl md:text-4xl lg:text-5xl"
 		>
-			PROJECTS
+			EXPERIENCE
 		</h2>
 		<h2
 			class="font-normal text-primary70 text-xl ml-12 mt-4 sm:text-2xl md:text-3xl lg:text-4xl lg:ml-20"
 		>
-			Freelance
+			Professional
 		</h2>
 		<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
-			{#each projects as project, index}
+			{#each experiences as experience, index}
 				<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
 					<div
 						class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
@@ -66,34 +66,37 @@
 							<h3
 								class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
 							>
-								{project.name}
+								{experience.name}
 							</h3>
 						</div>
 					</div>
-					<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
-					<Project {project} />
+					<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					<Project project={experience} />
 				</div>
 			{/each}
-		</div>
-		<h2 class="font-normal text-primary70 text-xl ml-12 mt-8 sm:text-2xl md:text-3xl lg:text-4xl">
-			Volunteer
-		</h2>
-		<div class="ml-2 gap-24 sm:ml-12">
-			<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
-				<div
-					class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
-				>
-					<div class="w-full h-full relative flex items-center justify-center">
-						<p class="absolute top-0 left-0 text-primary60">05.</p>
-						<h3
-							class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
+
+			<h2 class="font-normal text-primary70 text-xl ml-12 mt-8 sm:text-2xl md:text-3xl lg:text-4xl">
+				Projects
+			</h2>
+			<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
+				{#each projects as project, index}
+					<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
+						<div
+							class="w-full aspect-auto border border-primary20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
 						>
-							{projectCompass.name}
-						</h3>
+							<div class="w-full h-full relative flex items-center justify-center">
+								<p class="absolute top-0 left-0 text-primary60">0{index + 1}.</p>
+								<h3
+									class="font-normal text-md text-center text-primary70 sm:text-lg md:text-xl lg:text-2xl"
+								>
+									{project.name}
+								</h3>
+							</div>
+						</div>
+						<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+						<Project {project} />
 					</div>
-				</div>
-				<img class="object-cover rounded-xl" src={projectCompass.image} alt={projectCompass.name} />
-				<Project project={projectCompass} />
+				{/each}
 			</div>
 		</div>
 	</section>
@@ -115,13 +118,15 @@
 		<p class="text-primary80 mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am...</p>
 		<div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
 			{#each benefits as benefit, index}
-				<div class="flex gap-6 mx-4 sm:gap-8">
-					<p class="noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
+				<div class="flex gap-6 sm:gap-8">
+					<p class="ml-3 noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
 						{index + 1}
 					</p>
 					<div class="flex flex-col gap-6 sm:gap-8">
-						<h3 class="text-2xl text-primary50 sm:text-3xl md:text-5xl">{benefit.name}</h3>
-						<p>{benefit.description}</p>
+						<h3 class="mt-2 text-2xl text-primary50 sm:text-3xl md:text-5xl">
+							{benefit.name}
+						</h3>
+						<p class="text-lg mr-3">{benefit.description}</p>
 					</div>
 				</div>
 			{/each}

@@ -22,7 +22,7 @@
 				href="https://www.linkedin.com/in/brett-austin-eastman/"
 				rel="noreferrer"
 				target="_blank"
-				class="text-peach hover:text-greyPeach"
+				class="text-peach cursor-pointer hover:text-greyPeach"
 				>LinkedIn
 			</a>
 		</p>

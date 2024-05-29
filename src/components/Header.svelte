@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	export let y = 0;
 
 	let tabs = [
-		{ name: 'PROJECTS ', link: '#projects' },
+		{ name: 'EXPERIENCE ', link: '#experience' },
 		{ name: 'ABOUT', link: '#about' },
 		{ name: 'CONTACT', link: 'https://www.linkedin.com/in/brett-austin-eastman/' }
 	];

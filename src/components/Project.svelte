@@ -1,7 +1,4 @@
-<script>
-	/**
-	 * @type {{ name: string; href: string; icon: string; description: string; technologies: string; image: string}}
-	 */
+<script lang="ts">
 	export let project;
 </script>
 
