@@ -26,7 +26,7 @@ export default [
 			'Listening Roulette is a social music app enabling friends to listen to music together while chatting in real-time. I integrated an OpenAI-powered chatbot to provide background on artists, creating a more educational music experience. It was built with Firebase for authentication and scalability, and Styled Components for a reusable UI component library. The app uniquely combines real-time synchronization, AI enrichment, and reusable architectures to create an engaging way to share music.',
 		technologies:
 			'React, OpenAI, Next.js, Typescript, Firebase Authentication, Firestore, Styled-components',
-		image: 'images/ListeningRoulette-display.png'
+		image: 'images/ListeningRoulette-display2.png'
 	},
 	{
 		name: 'Ranked Choice',
