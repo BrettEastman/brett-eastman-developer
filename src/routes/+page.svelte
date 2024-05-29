@@ -44,7 +44,7 @@
 		</div>
 	</section>
 
-	<section id="projects" class="py-8 flex flex-col gap-4 md:gap-16 md:py-20 lg:py-32">
+	<section id="experience" class="py-8 flex flex-col gap-4 md:gap-16 md:py-20 lg:py-32">
 		<h2
 			class="font-normal m-auto text-primary80 text-2xl mt-12 sm:text-3xl md:text-4xl lg:text-5xl"
 		>
@@ -118,13 +118,15 @@
 		<p class="text-primary80 mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am...</p>
 		<div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
 			{#each benefits as benefit, index}
-				<div class="flex gap-6 mx-4 sm:gap-8">
-					<p class="noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
+				<div class="flex gap-6 sm:gap-8">
+					<p class="ml-3 noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
 						{index + 1}
 					</p>
 					<div class="flex flex-col gap-6 sm:gap-8">
-						<h3 class="text-2xl text-primary50 sm:text-3xl md:text-5xl">{benefit.name}</h3>
-						<p>{benefit.description}</p>
+						<h3 class="mt-2 text-2xl text-primary50 sm:text-3xl md:text-5xl">
+							{benefit.name}
+						</h3>
+						<p class="text-lg mr-3">{benefit.description}</p>
 					</div>
 				</div>
 			{/each}
