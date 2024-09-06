@@ -142,7 +142,7 @@
 		<div class="flex justify-between">
 			<div class="button-div">
 				<a
-					href="https://drive.google.com/file/d/1L0m-G53yQL206MqGh74dcp-fxwRDa9dF/view?usp=sharing"
+					href="https://drive.google.com/file/d/1VMWGVYd4ZRMj2lgteqNLrNgke7RFWYjr/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-lg px-4 relative z-4">Resume</a
