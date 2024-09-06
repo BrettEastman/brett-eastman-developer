@@ -70,7 +70,9 @@
 							</h3>
 						</div>
 					</div>
-					<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					<a href={experience.url} target="_blank" class="hover:scale-110 duration-200">
+						<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					</a>
 					<Project project={experience} />
 				</div>
 			{/each}
@@ -93,7 +95,13 @@
 								</h3>
 							</div>
 						</div>
-						<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+						{#if project.url}
+							<a href={project.url} target="_blank" class="hover:scale-110 duration-200">
+								<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+							</a>
+						{:else}
+							<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+						{/if}
 						<Project {project} />
 					</div>
 				{/each}
@@ -120,7 +128,7 @@
 			{#each benefits as benefit, index}
 				<div class="flex gap-6 sm:gap-8">
 					<p class="ml-3 noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
-						{index + 1}
+						{`0${index + 1}.`}
 					</p>
 					<div class="flex flex-col gap-6 sm:gap-8">
 						<h3 class="mt-2 text-2xl text-primary50 sm:text-3xl md:text-5xl">
