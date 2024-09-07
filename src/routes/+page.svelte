@@ -4,7 +4,14 @@
 	import projects from '$lib/projects';
 	import Project from '../components/Project.svelte';
 	import Title from '../components/Title.svelte';
+	import Meta from '../components/Meta.svelte';
 </script>
+
+<Meta
+	title="Brett Eastman - Full Stack Developer"
+	description="Brett Austin Eastman is a software engineer and musician based in San Francisco. He specializes in React, Svelte, Node, Firebase, MongoDB, and PostgreSQL."
+	keywords="software, engineer, web development"
+/>
 
 <main class="flex flex-col flex-1 scroller">
 	<section id="hero" class="z-[-1]">
