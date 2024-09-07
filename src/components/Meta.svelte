@@ -5,9 +5,10 @@
 	export let description =
 		'Brett Austin Eastman is a software engineer and musician based in San Francisco. He specializes in React, Svelte, Node, Firebase, MongoDB, and PostgreSQL.';
 	export let keywords = 'software, engineer, web development';
-	export let ogImage = '/images/BrettHeadshotBW.jpg';
+	export let fullImageURL = 'https://www.bretteastman.dev/images/BrettHeadshotBW.jpg';
+	// export let ogImage = '/images/BrettHeadshotBW.jpg';
 
-	$: fullImageURL = new URL(ogImage, $page.url.origin).href;
+	// $: fullImageURL = new URL(ogImage, $page.url.origin).href;
 </script>
 
 <svelte:head>

@@ -11,6 +11,7 @@
 	title="Brett Eastman - Full Stack Developer"
 	description="Brett Austin Eastman is a software engineer and musician based in San Francisco. He specializes in React, Svelte, Node, Firebase, MongoDB, and PostgreSQL."
 	keywords="software, engineer, web development"
+	fullImageURL="https://www.bretteastman.dev/images/BrettHeadshotBW.jpg"
 />
 
 <main class="flex flex-col flex-1 scroller">
