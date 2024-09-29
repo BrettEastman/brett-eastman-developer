@@ -5,7 +5,7 @@ export default [
 		url: 'https://lafsmwtheoryexam.com/',
 		icon: 'fa-solid fa-music',
 		description:
-			"At LydianLab, a boutique web development agency, we specialize in creating user-friendly applications with modern technologies for clients in music education. We are currently designing and developing a web application for a jazz camp's online music theory evaluation exam. By leveraging MUI’s layout-first approach to CSS, we increased development speed by 50%. We chose the VexFlow open-source music notation library for its small bundle size and fast load times, ensuring an engaging user experience. Additionally, we architected a robust core user authentication flow using Firebase's provider layer and hooks for seamless state management.",
+			"At LydianLab, a boutique web development agency, we specialize in creating user-friendly applications with modern technologies for clients in music education. We are currently designing and developing a web application for a jazz camp's online music theory evaluation exam. By leveraging MUI’s layout-first approach to CSS, we increased development speed by 50%. We chose the VexFlow open-source music notation library for its small bundle size and fast load times, ensuring an engaging user experience. Additionally, we architected the authentication flow, database, cloud storage, and deployment using Firebase for industrial grade performance.",
 		technologies: 'Next.js, Typescript, VexFlow, Firebase, Figma, MUI',
 		image: 'images/LydianLabsTech-display3.png'
 	},
