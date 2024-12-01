@@ -1,7 +1,7 @@
 export default [
 	{
 		name: 'LydianLab Music Education Technology',
-		href: 'https://github.com/Lydian-Labs',
+		href: 'https://github.com/Lydian-Lab-Music-Ed-Tech',
 		url: 'https://lafsmwtheoryexam.com/',
 		icon: 'fa-solid fa-music',
 		description:
@@ -25,7 +25,7 @@ export default [
 		url: 'https://kenworthy-machine.vercel.app/',
 		icon: 'fa-solid fa-wave-square',
 		description:
-			"At WWC, we are a dedicated team of software engineers committed to crafting impactful digital experiences through cutting-edge design and development. We empower our clients with easy content management through Tina CMS's user-friendly interface, which significantly reduces development costs. Our use of Figma's Chakra integration boosts development efficiency by establishing a consistent design system, enabling us to deliver polished and professional results. On a recent project, we enhanced a client website UX with the Swiper library's intuitive interactions and customizable responsiveness, to ensure a comfortable user experience. Additionally, we leverage Next.js's server-side rendering to optimize performance, resulting in faster load times.",
+			'WWC is a collective of passionate software engineers with a mission to create impactful digital experiences through innovative design and development, helping clients connect with their audience in meaningful ways. In a recent project, we empowered our client with an easy-to-use content management solution with Tina CMS, which has a user-friendly interface, reducing potential future maintenance costs. For CSS, we implemented Chakra UI to streamline development, resulting in a 30% faster UI creation process and improved accessibility compliance across the application. And, using Figma with our designer boosted development efficiency by completing the design system in advance with advice from the engineers.',
 		technologies: 'Next.js, Typescript, Figma, Chakra UI, Tina CMS',
 		image: 'images/WWC-display2.png'
 	}

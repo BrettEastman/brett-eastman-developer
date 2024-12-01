@@ -14,7 +14,7 @@
 >
 	<div class="flex gap-8 sm:ml-auto sm:gap-12">
 		{#each tabs as tab, index}
-			<a href={tab.link} class="duration-200 hover:text-peach">
+			<a href={tab.link} class="duration-200 hover:text-peach" aria-label={`Tab for ${tab.name}`}>
 				<p>{tab.name}</p>
 			</a>
 		{/each}

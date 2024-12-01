@@ -18,8 +18,9 @@
 		<div class="relative grid place-items-center">
 			<img
 				class="object-cover z-[2] max-h-[45vh] rounded-3xl"
-				src={'images/Brett-headshot.jpeg'}
+				src={'images/Brett-Potrero-BW.jpeg'}
 				alt="Brett Eastman profile headshot"
+				aria-label="Brett Eastman profile headshot"
 			/>
 		</div>
 		<div class="flex flex-col lg:justify-center tex-center lg:text-left gap-6 md:gap-8 lg:gap-10">
@@ -35,6 +36,7 @@
 					class="text-blueGrey hover:border-b duration-100"
 					href="https://www.brettaustineastman.com/"
 					target="_blank"
+					aria-label="Brett Eastman musician website"
 				>
 					musician
 				</a>, I have always played in groups where everyone works towards a common good. Working on
@@ -73,8 +75,18 @@
 							</h3>
 						</div>
 					</div>
-					<a href={experience.url} target="_blank" class="hover:scale-110 duration-200">
-						<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					<a
+						href={experience.url}
+						target="_blank"
+						class="hover:scale-110 duration-200"
+						aria-label={experience.url}
+					>
+						<img
+							class="object-cover rounded-xl"
+							src={experience.image}
+							alt={experience.name}
+							aria-label={`Cover image of ${experience.name}`}
+						/>
 					</a>
 					<Project project={experience} />
 				</div>
@@ -99,11 +111,26 @@
 							</div>
 						</div>
 						{#if project.url}
-							<a href={project.url} target="_blank" class="hover:scale-110 duration-200">
-								<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+							<a
+								href={project.url}
+								target="_blank"
+								class="hover:scale-110 duration-200"
+								aria-label={`Link to ${project.name} site`}
+							>
+								<img
+									class="object-cover rounded-xl"
+									src={project.image}
+									alt={project.name}
+									aria-label={`Cover image of ${project.name}`}
+								/>
 							</a>
 						{:else}
-							<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+							<img
+								class="object-cover rounded-xl"
+								src={project.image}
+								alt={project.name}
+								aria-label={`Cover image of ${project.name}`}
+							/>
 						{/if}
 						<Project {project} />
 					</div>
@@ -148,7 +175,8 @@
 					href="https://drive.google.com/file/d/1VMWGVYd4ZRMj2lgteqNLrNgke7RFWYjr/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="text-lg px-4 relative z-4">Resume</a
+					class="text-lg px-4 relative z-4"
+					aria-label="Brett Eastman resume">Resume</a
 				>
 			</div>
 		</div>
