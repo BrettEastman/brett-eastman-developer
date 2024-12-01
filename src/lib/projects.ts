@@ -29,26 +29,5 @@ export default [
 		technologies:
 			'Webpack, React, Node.js, PostgreSQL, AWS, Express, NGINX, Jest, K6, Loader.io, New Relic',
 		image: 'images/Dinomite-display.png'
-	},
-	{
-		name: 'Listening Roulette',
-		href: 'https://github.com/BrettEastman/listeningRouletteNext',
-		url: 'https://github.com/BrettEastman/listeningRouletteNext',
-		icon: 'fa-solid fa-circle-play',
-		description:
-			'Listening Roulette is a social music app enabling friends to listen to music together while chatting in real-time. I integrated an OpenAI-powered chatbot to provide background on artists, creating a more educational music experience. It was built with Firebase for authentication and scalability, and Styled Components for a reusable UI component library. The app uniquely combines real-time synchronization, AI enrichment, and reusable architectures to create an engaging way to share music.',
-		technologies:
-			'React, OpenAI, Next.js, Typescript, Firebase Authentication, Firestore, Styled-components',
-		image: 'images/ListeningRoulette-display2.png'
-	},
-	{
-		name: 'Harper Woodward',
-		href: 'https://github.com/BrettEastman/Harper-Woodward',
-		url: 'https://github.com/BrettEastman/Harper-Woodward',
-		icon: 'fa-solid fa-guitar',
-		description:
-			'Harper Woodward is a web application for holding live stream concerts with live chat between the viewers and the artist. The app requires authentication and is a secure space for the artist to connect with their audience in an intimate live setting. As Project Manager and Full Stack Developer, I brought a team of 7 engineers through critical decisions regarding DBMS, project architecture, authentication, Git workflows, and division of labor, while at the same time implementing and desiging the Firebase authentication UI.',
-		technologies: 'Vite, React, Node.js, Firebase, Tailwind',
-		image: 'images/Harper-display.png'
 	}
 ];

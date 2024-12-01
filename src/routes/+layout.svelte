@@ -27,8 +27,9 @@
 			<button
 				on:click={goToTop}
 				class="ml-auto rounded-full aspect-square bg-primary10 text-peach px-4 hover:bg-primary80 duration-300"
+				aria-label="Go to top"
 			>
-				<i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
+				<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
 			</button>
 		</div>
 	</div>
@@ -40,7 +41,7 @@
 		<div class="w-[92%] z-20">
 			<Footer />
 		</div>
-		<div class="w-[8%] z-0" />
+		<div class="w-[8%] z-0"></div>
 	</div>
 </div>
 

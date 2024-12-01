@@ -18,8 +18,9 @@
 		<div class="relative grid place-items-center">
 			<img
 				class="object-cover z-[2] max-h-[45vh] rounded-3xl"
-				src={'images/Brett-headshot.jpeg'}
+				src={'images/Brett-Potrero-BW.jpeg'}
 				alt="Brett Eastman profile headshot"
+				aria-label="Brett Eastman profile headshot"
 			/>
 		</div>
 		<div class="flex flex-col lg:justify-center tex-center lg:text-left gap-6 md:gap-8 lg:gap-10">
@@ -35,14 +36,12 @@
 					class="text-blueGrey hover:border-b duration-100"
 					href="https://www.brettaustineastman.com/"
 					target="_blank"
+					aria-label="Brett Eastman musician website"
 				>
 					musician
 				</a>, I have always played in groups where everyone works towards a common good. Working on
 				a team of developers is no different. If I’m not coding, I might be out with my wife for a
-				walk in San Francisco or going to a concert. Tech stack includes
-				<span class="text-peach"
-					>React, Svelte, Node, Express, MongoDB, Firebase and PostgreSQL.</span
-				>
+				walk in San Francisco, playing drums, or going to a concert.
 			</p>
 		</div>
 	</section>
@@ -73,8 +72,18 @@
 							</h3>
 						</div>
 					</div>
-					<a href={experience.url} target="_blank" class="hover:scale-110 duration-200">
-						<img class="object-cover rounded-xl" src={experience.image} alt={experience.name} />
+					<a
+						href={experience.url}
+						target="_blank"
+						class="hover:scale-110 duration-200"
+						aria-label={experience.url}
+					>
+						<img
+							class="object-cover rounded-xl"
+							src={experience.image}
+							alt={experience.name}
+							aria-label={`Cover image of ${experience.name}`}
+						/>
 					</a>
 					<Project project={experience} />
 				</div>
@@ -99,11 +108,26 @@
 							</div>
 						</div>
 						{#if project.url}
-							<a href={project.url} target="_blank" class="hover:scale-110 duration-200">
-								<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+							<a
+								href={project.url}
+								target="_blank"
+								class="hover:scale-110 duration-200"
+								aria-label={`Link to ${project.name} site`}
+							>
+								<img
+									class="object-cover rounded-xl"
+									src={project.image}
+									alt={project.name}
+									aria-label={`Cover image of ${project.name}`}
+								/>
 							</a>
 						{:else}
-							<img class="object-cover rounded-xl" src={project.image} alt={project.name} />
+							<img
+								class="object-cover rounded-xl"
+								src={project.image}
+								alt={project.name}
+								aria-label={`Cover image of ${project.name}`}
+							/>
 						{/if}
 						<Project {project} />
 					</div>
@@ -119,10 +143,8 @@
 		<div
 			class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-greyPeach after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-greyPeach py-4"
 		>
-			<h6 class="text-primary100 text-lg sm:text-xl md:text-2xl">
-				Would you like to know a bit more
-			</h6>
-			<h3 class="text-primary90 font-semibold text-3xl sm:text-4xl md:text-5xl">
+			<h6 class="text-primary100 text-lg sm:text-xl md:text-2xl">Want to know a bit more</h6>
+			<h3 class="text-primary90 font-semibold text-2xl sm:text-4xl md:text-5xl">
 				about <span class="noto text-peach">me?</span>
 			</h3>
 		</div>
@@ -148,7 +170,8 @@
 					href="https://drive.google.com/file/d/1VMWGVYd4ZRMj2lgteqNLrNgke7RFWYjr/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="text-lg px-4 relative z-4">Resume</a
+					class="text-lg px-4 relative z-4"
+					aria-label="Brett Eastman resume">Resume</a
 				>
 			</div>
 		</div>
