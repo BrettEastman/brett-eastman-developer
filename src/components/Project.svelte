@@ -17,7 +17,7 @@
 
 		<p class="text-primary60 sm:text-md md:text-lg">{project.description}</p>
 		<div>
-			<p class="text-primary30">Technologies:</p>
+			<p class="text-primary30">tech-stack:</p>
 			<strong class="text-peach">{project.technologies}</strong>
 		</div>
 		<div class="flex justify-between">
