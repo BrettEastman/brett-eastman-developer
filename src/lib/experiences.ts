@@ -22,7 +22,7 @@ export default [
 	{
 		name: 'Wavecrest Web Collective',
 		href: 'https://github.com/wavecrestweb',
-		url: 'https://kenworthy-machine.vercel.app/',
+		url: 'https://www.kenworthymachine.com/',
 		icon: 'fa-solid fa-wave-square',
 		description:
 			'WWC is a collective of passionate software engineers dedicated to creating impactful digital experiences through innovative design and development, helping clients connect with their audiences in meaningful ways. In a recent project, we delivered an intuitive content management solution with Tina CMS, offering a user-friendly interface and reducing future maintenance costs in the process. To streamline development, we used Chakra UI for CSS, achieving a 30% faster UI creation process and improved accessibility compliance across the app.',
