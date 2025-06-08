@@ -1,14 +1,24 @@
 <script>
 	import { page } from '$app/stores';
 
-	export let title = 'Brett Eastman - Full Stack Developer';
-	export let description =
-		'Brett Austin Eastman is a software engineer and musician based in San Francisco. He specializes in React, Svelte, Node, Firebase, MongoDB, and PostgreSQL.';
-	export let keywords = 'software development, web design, SEO';
-	export let ogImage = '/images/Brett-headshot.jpeg';
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [title]
+	 * @property {string} [description]
+	 * @property {string} [keywords]
+	 * @property {string} [ogImage]
+	 */
 
-	$: fullUrl = $page.url.href;
-	$: fullImageUrl = new URL(ogImage, $page.url.origin).href;
+	/** @type {Props} */
+	let {
+		title = 'Brett Eastman - Full Stack Developer',
+		description = 'Brett Austin Eastman is a software engineer and musician based in San Francisco. He specializes in React, Svelte, Node, Firebase, MongoDB, and PostgreSQL.',
+		keywords = 'software development, web design, SEO',
+		ogImage = '/images/Brett-headshot.jpeg'
+	} = $props();
+
+	let fullUrl = $derived($page.url.href);
+	let fullImageUrl = $derived(new URL(ogImage, $page.url.origin).href);
 </script>
 
 <svelte:head>

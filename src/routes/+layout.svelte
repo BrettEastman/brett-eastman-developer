@@ -5,13 +5,20 @@
 	import '../app.css';
 	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
 
 	inject({ mode: dev ? 'development' : 'production' });
 	injectSpeedInsights();
 
-	let y = 0;
-	let innerHeight = 0;
-	let innerWidth = 0;
+	let y = $state(0);
+	let innerHeight = $state(0);
+	let innerWidth = $state(0);
 
 	function goToTop() {
 		document.body.scrollIntoView();
@@ -25,7 +32,7 @@
 				(y > 0 ? ' opacity-full pointer-events-auto' : ' pointer-events-none opacity-0')}
 		>
 			<button
-				on:click={goToTop}
+				onclick={goToTop}
 				class="ml-auto rounded-full aspect-square bg-primary10 text-peach px-4 hover:bg-primary80 duration-300"
 				aria-label="Go to top"
 			>
@@ -35,7 +42,7 @@
 	</div>
 	<Header {y} />
 	<div>
-		<slot />
+		{@render children?.()}
 	</div>
 	<div class="flex">
 		<div class="w-[92%] z-20">

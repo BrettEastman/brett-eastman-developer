@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let y = 0;
+	interface Props {
+		y?: number;
+	}
+
+	let { y = 0 }: Props = $props();
 
 	let tabs = [
 		{ name: 'EXPERIENCE ', link: '#experience' },
