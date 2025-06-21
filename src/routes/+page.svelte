@@ -18,7 +18,7 @@
 		<div class="relative grid place-items-center">
 			<img
 				class="object-cover z-[2] max-h-[45vh] rounded-3xl"
-				src={'images/Brett-Potrero-BW.jpeg'}
+				src={'images/Brett-Potrero2.jpeg'}
 				alt="Brett Eastman profile headshot"
 				aria-label="Brett Eastman profile headshot"
 			/>
