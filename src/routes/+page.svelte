@@ -180,7 +180,9 @@
 
 <style>
 	#hero {
-		background: radial-gradient(var(--peach), 85%, var(--primary40));
+		/* background: linear-gradient(135deg, var(--primary10), var(--primary20)); */
+		/* background: var(--primary10); */
+		background: radial-gradient(var(--peach), 45%, var(--primary40));
 	}
 
 	.button-div {
