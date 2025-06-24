@@ -7,7 +7,7 @@ export default [
 		description:
 			"For fun and as a way to explore cutting-edge technology, I built and deployed bretteastmanstudio.com—a site hosting my music teaching materials alongside an AI-powered music historian chatbot for students seeking deeper knowledge about artists and topics. I integrated Google's lightweight gemini-2.0-flash model with contextual memory of the past 5 chats to deliver functionality at minimal cost. The backend runs on a cost-effective Linode Nanode instance hosting an open-source Pocketbase database, secured behind an NGINX reverse proxy with HTTPS via Let's Encrypt and rate limiting for protection. The project leverages SvelteKit with Svelte 5 syntax, TypeScript, Tailwind CSS, and Cloudflare, demonstrating my ability to architect full-stack applications that combine modern web technologies with AI integration and robust deployment practices.",
 		technologies: 'Svelte, Vite, Typescript, Tailwind, Cloudflare',
-		image: 'images/brett-eastman-studio-portfolio.png'
+		image: 'images/BEStudio-portfolio.png'
 	},
 	{
 		name: 'Project Compass',
