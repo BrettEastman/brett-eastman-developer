@@ -167,7 +167,7 @@
 		<div class="flex justify-between">
 			<div class="button-div">
 				<a
-					href="https://drive.google.com/file/d/1jkG1GLs0h1s5liYLnedSR-6b8RMogBO9/view?usp=sharing"
+					href="https://drive.google.com/file/d/1VOvlsPzH0N5xhieyJWyBuF5qD2-O2ip9/view?usp=drive_link"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-lg px-4 relative z-4"
