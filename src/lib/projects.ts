@@ -1,5 +1,15 @@
 export default [
 	{
+		name: 'Audio Transcriber',
+		href: 'https://github.com/BrettEastman/audio-transcriber',
+		url: 'https://github.com/BrettEastman/audio-transcriber',
+		icon: 'fa-solid fa-microphone',
+		description:
+			'I built Audio Transcriber, a lightweight browser-based app that converts audio recordings into downloadable text files using a local Whisper server. This project was created to solve my own need for taking accurate notes during conversations with doctors and caregivers. After exploring cloud and desktop options, I designed a local web app powered by a Python/FastAPI backend and a clean Svelte frontend, allowing fast transcription, zero cloud costs, easier handling of large files, and full privacy on my machine. Along the way I learned FastAPI fundamentals, built a modern Svelte store architecture, set up a clean dependency workflow with requirements.txt, and tied the project together with a simple start.sh script. This open-source tool has already improved my daily workflow, and the codebase is available for anyone to use or extend.',
+		technologies: 'Svelte, OpenAI Whisper, FastAPI, Python, TypeScript',
+		image: 'images/AudioTranscriber-display.png'
+	},
+	{
 		name: 'Brett Eastman Studio',
 		href: 'https://github.com/BrettEastman/bretteastmanstudio',
 		url: 'https://www.bretteastmanstudio.com/',
