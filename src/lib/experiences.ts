@@ -6,7 +6,7 @@ export default [
 		icon: 'fa-solid fa-scale-balanced',
 		description:
 			'I’m currently interning with SF Living Wage, where I’m helping redevelop their mobile app into a more modern, scalable, and cohesive product. My work includes converting the entire codebase to TypeScript, implementing a unified design system and application theme to standardize typography, iconography, and colors, and refactoring all inline styles into clean, component-scoped style sheets for improved structure and readability. The project leverages React Native, TypeScript, and Figma to deliver a more maintainable and future-friendly experience.',
-		technologies: 'React Native, Typescript, Figma',
+		technologies: 'React Native, TypeScript, Figma',
 		image: 'images/SFLivingWage-display2.png'
 	},
 	{
