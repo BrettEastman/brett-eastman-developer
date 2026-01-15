@@ -167,7 +167,7 @@
 		<div class="flex justify-between">
 			<div class="button-div">
 				<a
-					href="https://drive.google.com/file/d/1qld0in5Wos6fp87u_-C24NiovaQdxtPm/view?usp=sharing"
+					href="https://drive.google.com/file/d/14lOby1_DOVMVEjJnElvBJ4tS92FhWwlT/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-lg px-4 relative z-4"
@@ -180,8 +180,6 @@
 
 <style>
 	#hero {
-		/* background: linear-gradient(135deg, var(--primary10), var(--primary20)); */
-		/* background: var(--primary10); */
 		background: radial-gradient(var(--peach), 45%, var(--primary40));
 	}
 
