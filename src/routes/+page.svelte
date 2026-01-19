@@ -17,7 +17,7 @@
 	<section id="introPage" class="grid grid-cols-1 mx-6 lg:grid-cols-2 gap-10 py-8 sm:py-14">
 		<div class="relative grid place-items-center">
 			<img
-				class="object-cover z-[2] max-h-[45vh] rounded-3xl"
+				class="object-cover z-2 max-h-[45vh] rounded-3xl"
 				src={'images/Brett-Potrero2.jpeg'}
 				alt="Brett Eastman profile headshot"
 				aria-label="Brett Eastman profile headshot"
@@ -149,7 +149,7 @@
 			</h3>
 		</div>
 		<p class="text-primary80 mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am...</p>
-		<div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+		<div class="flex flex-col gap-20 w-full mx-auto max-w-200">
 			{#each benefits as benefit, index}
 				<div class="flex gap-6 sm:gap-8">
 					<p class="ml-3 noto text-4xl text-peach sm:text 5xl md:text-6xl text-500 font-semibold">
