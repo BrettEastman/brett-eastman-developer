@@ -18,7 +18,7 @@
 		<div class="relative grid place-items-center">
 			<img
 				class="object-cover z-2 max-h-[45vh] rounded-3xl"
-				src={'images/Brett-Potrero2.jpeg'}
+				src="images/Brett-Potrero2.jpeg"
 				alt="Brett Eastman profile headshot"
 				aria-label="Brett Eastman profile headshot"
 			/>
@@ -58,7 +58,7 @@
 			Professional
 		</h2>
 		<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
-			{#each experiences as experience, index}
+			{#each experiences as experience, index (experience.name)}
 				<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
 					<div
 						class="w-full aspect-auto border border-neutral20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
@@ -93,7 +93,7 @@
 				Projects
 			</h2>
 			<div class="flex flex-col ml-2 gap-4 sm:ml-12 sm:gap-24">
-				{#each projects as project, index}
+				{#each projects as project, index (project.name)}
 					<div class="grid grid-cols-1 p-8 gap-12 md:grid-cols-[20%_30%_40%]">
 						<div
 							class="w-full aspect-auto border border-neutral20 rounded-xl max-h-40 p-[5%] md:p-[10%]"
@@ -150,9 +150,11 @@
 		</div>
 		<p class="text-neutral80 mx-auto noto font-semibold text-lg sm:text-xl md:text-2xl">I am...</p>
 		<div class="flex flex-col gap-20 w-full mx-auto max-w-200">
-			{#each benefits as benefit, index}
+			{#each benefits as benefit, index (benefit.name)}
 				<div class="flex gap-6 sm:gap-8">
-					<p class="ml-3 noto text-4xl text-secondary sm:text 5xl md:text-6xl text-500 font-semibold">
+					<p
+						class="ml-3 noto text-4xl text-secondary sm:text 5xl md:text-6xl text-500 font-semibold"
+					>
 						{`0${index + 1}.`}
 					</p>
 					<div class="flex flex-col gap-6 sm:gap-8">
