@@ -1,6 +1,6 @@
 {
-	"name": "bretteastmandeveloper",
-	"version": "1.0.1",
+	"name": "Brett Eastman Developer",
+	"version": "1.0.2",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

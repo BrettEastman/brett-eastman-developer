@@ -33,7 +33,7 @@
 		>
 			<button
 				onclick={goToTop}
-				class="ml-auto rounded-full aspect-square bg-primary10 text-peach px-4 hover:bg-primary80 duration-300"
+				class="ml-auto rounded-full aspect-square bg-neutral10 text-secondary px-4 hover:bg-neutral80 duration-300"
 				aria-label="Go to top"
 			>
 				<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
