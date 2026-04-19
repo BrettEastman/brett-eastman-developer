@@ -1,7 +1,6 @@
 <img width="750" alt="Screenshot 2023-11-07 at 6 01 49 PM" src="https://github.com/BrettEastman/brett-eastman-developer/assets/76603041/1442116d-3573-4517-b66c-c530fb2793ee">
 <img width="750" alt="Screenshot 2023-11-07 at 6 01 49 PM" src="https://github.com/BrettEastman/brett-eastman-developer/assets/76603041/f8ddac47-fea7-401e-b5d4-31d58d27ccd1">
 
-
 ## About
 
 ✨⁂Welcome to the repo for the developer portfolio site of Brett Eastman⁂✨
@@ -9,6 +8,7 @@
 [Have a look online!](https://www.bretteastman.dev/)
 
 ## Features
+
 - Responsive design
 - Built using a modern tech stack
 - CSS techniques including use of variables and keyframe animation

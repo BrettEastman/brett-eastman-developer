@@ -1,45 +1,21 @@
 @import 'tailwindcss';
 
+/* Theme tokens: neutral* = grayscale; secondary* = brand accent ramp; borderMuted = subtle borders */
 @theme {
-	--color-primary10: #0d0e0b;
-	--color-primary20: #2b2b2b;
-	--color-primary30: #696969;
-	--color-primary40: #848484;
-	--color-primary50: #a0a0a0;
-	--color-primary60: #b7b8b6;
-	--color-primary70: #c9cac8;
-	--color-primary80: #eeeeee;
-	--color-primary90: #fcfcfc;
-	--color-primary100: #ffffff;
-	--color-pear: #d6bb7d;
-	--color-peach: #e59d5e;
-	--color-peachGrey: #dba784;
-	--color-greyPeach: #d3b4a0;
-	--color-blueRedGrey: #b9b1bc;
-	--color-blueGrey: #b0afc4;
-	--color-warning: #b3261e;
-	--color-warningHover: #a31f19;
-}
-
-:root {
-	--primary10: #0d0e0b;
-	--primary20: #2b2b2b;
-	--primary30: #696969;
-	--primary40: #848484;
-	--primary50: #a0a0a0;
-	--primary60: #b7b8b6;
-	--primary70: #c9cac8;
-	--primary80: #eeeeee;
-	--primary90: #fcfcfc;
-	--primary100: #ffffff;
-	--pear: #d6bb7d;
-	--peach: #e59d5e;
-	--peachGrey: #dba784;
-	--greyPeach: #d3b4a0;
-	--blueRedGrey: #b9b1bc;
-	--blueGrey: #b0afc4;
-	--warning: #b3261e;
-	--warningHover: #a31f19;
+	--color-neutral10: #0d0e0b;
+	--color-neutral20: #2b2b2b;
+	--color-neutral30: #696969;
+	--color-neutral40: #848484;
+	--color-neutral50: #a0a0a0;
+	--color-neutral60: #b7b8b6;
+	--color-neutral70: #c9cac8;
+	--color-neutral80: #eeeeee;
+	--color-neutral90: #fcfcfc;
+	--color-neutral100: #ffffff;
+	--color-secondary: #e59d5e;
+	--color-secondaryMuted: #d3b4a0;
+	--color-secondarySubtle: #dba784;
+	--color-borderMuted: #b0afc4;
 }
 
 html {
@@ -139,6 +115,6 @@ h6,
 		fill: transparent;
 	}
 	to {
-		fill: var(--primary100);
+		fill: var(--color-neutral100);
 	}
 }
