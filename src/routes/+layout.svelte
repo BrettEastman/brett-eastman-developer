@@ -29,11 +29,11 @@
 	<div class="flex flex-col">
 		<div
 			class={'fixed bottom-0 right-0 duration-200 flex p-10 z-10' +
-				(y > 0 ? ' opacity-full pointer-events-auto' : ' pointer-events-none opacity-0')}
+				(y > 0 ? ' opacity-100 pointer-events-auto' : ' pointer-events-none opacity-0')}
 		>
 			<button
 				onclick={goToTop}
-				class="ml-auto rounded-full aspect-square bg-neutral10 text-secondary px-4 hover:bg-neutral80 duration-300"
+				class="ml-auto rounded-full aspect-square bg-surface-raised text-accent border border-border px-4 hover:bg-accent hover:text-surface duration-300"
 				aria-label="Go to top"
 			>
 				<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>

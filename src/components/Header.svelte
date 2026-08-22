@@ -18,11 +18,7 @@
 >
 	<div class="flex gap-8 sm:ml-auto sm:gap-12">
 		{#each tabs as tab (tab.link)}
-			<a
-				href={tab.link}
-				class="duration-200 hover:text-secondary"
-				aria-label={`Tab for ${tab.name}`}
-			>
+			<a href={tab.link} class="duration-200 hover:text-accent" aria-label={`Tab for ${tab.name}`}>
 				<p>{tab.name}</p>
 			</a>
 		{/each}
