@@ -1,5 +1,5 @@
-<img width="750" alt="Screenshot 2023-11-07 at 6 01 49 PM" src="https://github.com/BrettEastman/brett-eastman-developer/assets/76603041/1442116d-3573-4517-b66c-c530fb2793ee">
-<img width="750" alt="Screenshot 2023-11-07 at 6 01 49 PM" src="https://github.com/BrettEastman/brett-eastman-developer/assets/76603041/f8ddac47-fea7-401e-b5d4-31d58d27ccd1">
+<img width="1233" height="814" alt="Screenshot 2026-08-22 at 11 11 05 AM" src="https://github.com/user-attachments/assets/1d54eac3-c77a-4bf4-8007-0001a9d8bf72" />
+
 
 ## About
 
@@ -19,7 +19,3 @@
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
