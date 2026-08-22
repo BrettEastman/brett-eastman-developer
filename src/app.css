@@ -1,40 +1,145 @@
 @import 'tailwindcss';
 
-/* Theme tokens: neutral* = grayscale; secondary* = brand accent ramp; borderMuted = subtle borders */
-@theme {
-	--color-neutral10: #0d0e0b;
-	--color-neutral20: #2b2b2b;
-	--color-neutral30: #696969;
-	--color-neutral40: #848484;
-	--color-neutral50: #a0a0a0;
-	--color-neutral60: #b7b8b6;
-	--color-neutral70: #c9cac8;
-	--color-neutral80: #eeeeee;
-	--color-neutral90: #fcfcfc;
-	--color-neutral100: #ffffff;
-	--color-secondary: #e59d5e;
-	--color-secondaryMuted: #d3b4a0;
-	--color-secondarySubtle: #dba784;
-	--color-borderMuted: #b0afc4;
+/*
+ * Primitive ramps. Raw values only — deliberately declared on :root rather than
+ * in @theme so they do NOT mint utility classes. Nobody should write bg-grey-800;
+ * they should write bg-surface-raised. The greys carry a faint violet cast so
+ * they sit with the amethyst accent instead of fighting it.
+ */
+:root {
+	--grey-950: #0d0c10;
+	--grey-900: #16151b;
+	--grey-800: #2a2833;
+	--grey-700: #3d3a49;
+	--grey-600: #565265;
+	--grey-500: #6e697d;
+	--grey-400: #948fa3;
+	--grey-300: #b3aec0;
+	--grey-200: #d0ccd9;
+	--grey-100: #e8e6ee;
+	--grey-50: #f6f5f9;
+
+	--amethyst-300: #c4b0e8;
+	--amethyst-400: #b096e0;
+	--amethyst-500: #9d7cd8;
+	--amethyst-600: #8262c0;
+	--amethyst-700: #6a4da3;
+	--amethyst-800: #543d82;
 }
 
-html {
-	scroll-behavior: smooth;
+/*
+ * Semantic tokens. Dark is the base theme; see the media query below for light.
+ *
+ * `static` (not `inline`) is load-bearing. Tailwind tree-shakes unused theme
+ * variables by default, and several of these are only ever read from scoped
+ * <style> blocks that the class scanner never sees. `inline` would be actively
+ * wrong here: it substitutes the literal value into each utility, which would
+ * freeze the dark palette in place and break the light-mode override entirely.
+ */
+@theme static {
+	--color-surface: var(--grey-950);
+	--color-surface-raised: var(--grey-900);
+	--color-heading: var(--grey-50);
+	--color-content: var(--grey-100);
+	--color-content-muted: var(--grey-300);
+	--color-content-subtle: var(--grey-400);
+	--color-accent: var(--amethyst-500);
+	--color-accent-hover: var(--amethyst-400);
+	--color-accent-muted: var(--amethyst-400);
+	--color-border: var(--grey-800);
+	--color-border-strong: var(--grey-600);
+	--color-hero-fade: var(--grey-600);
+
+	--font-sans: 'Open Sans', sans-serif;
+	--font-display: 'Noto Sans', sans-serif;
 }
 
-* {
-	font-family: 'Open Sans', sans-serif;
+:root {
+	color-scheme: dark;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.noto {
-	font-family: 'Noto Sans', sans-serif;
-	color: '#A0A0A0';
+/*
+ * Light theme. Unlayered on purpose: Tailwind emits @theme output inside
+ * `@layer theme`, and unlayered rules outrank layered ones regardless of source
+ * order, so these overrides always win.
+ *
+ * The accent has to darken here. #9d7cd8 on #f6f5f9 is ~2.6:1 and fails AA;
+ * #6a4da3 lands near 7.3:1. That asymmetry is why these are semantic tokens
+ * rather than a single remapped ramp.
+ */
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+
+		--color-surface: var(--grey-50);
+		--color-surface-raised: #ffffff;
+		--color-heading: var(--grey-950);
+		--color-content: var(--grey-800);
+		--color-content-muted: var(--grey-600);
+		--color-content-subtle: var(--grey-500);
+		--color-accent: var(--amethyst-700);
+		--color-accent-hover: var(--amethyst-800);
+		--color-accent-muted: var(--amethyst-500);
+		--color-border: var(--grey-200);
+		--color-border-strong: var(--grey-300);
+		--color-hero-fade: var(--grey-300);
+	}
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		font-family: var(--font-sans);
+	}
+
+	/*
+	 * Layered so per-element text-* utilities still win. This rule previously
+	 * lived unlayered with an invalid quoted hex ('#A0A0A0'), which browsers
+	 * dropped; unlayering it with a valid value would have silently overridden
+	 * every heading color set in the markup.
+	 */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-display);
+		color: var(--color-heading);
+	}
+}
+
+/*
+ * Wipe-on-hover button. Previously copy-pasted into +page.svelte and
+ * Project.svelte with drifted padding/margin. Callers supply their own
+ * radius/spacing/border via utilities.
+ */
+@utility btn-wipe {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 200ms;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 100%;
+		height: 100%;
+		width: 102%;
+		z-index: -1;
+		background-color: var(--color-accent);
+		transition-duration: 300ms;
+	}
+
+	&:hover {
+		color: var(--color-surface);
+		font-weight: 600;
+	}
+
+	&:hover::after {
+		transform: translateX(100%);
+	}
 }
 
 #logo {
@@ -42,6 +147,11 @@ h6,
 	top: 10%;
 	left: 0%;
 	animation: fill 0.8s ease forwards 2.3s;
+}
+
+/* currentColor so the logo tracks the active theme; it was hardcoded white. */
+#logo path {
+	stroke: currentColor;
 }
 
 #logo path:nth-child(1) {
@@ -115,6 +225,6 @@ h6,
 		fill: transparent;
 	}
 	to {
-		fill: var(--color-neutral100);
+		fill: currentColor;
 	}
 }
