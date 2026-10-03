@@ -5,7 +5,7 @@ export default [
 		url: 'https://github.com/SF-LivingWageCoalition/sflivingwages-mobile-app',
 		icon: 'fa-solid fa-scale-balanced',
 		description:
-			'I’m currently interning with SF Living Wage, where I’m helping redevelop their mobile app into a more modern, scalable, and cohesive product. My work includes converting the entire codebase to TypeScript, creating a unified design system and application theme to standardize typography, iconography, and colors, as well as adding features to the Assist and Campaigns screens. The project leverages React Native, TypeScript, and Figma to deliver a more maintainable and future-friendly experience.',
+			'I’m currently volunteering with SF Living Wage, redeveloping their mobile app into a more modern, scalable, and cohesive product. My work has included converting the entire codebase to TypeScript, creating a unified design system and application theme to standardize typography, iconography, and colors, as well as adding features to the Assist and Campaigns screens. The project leverages React Native, TypeScript, and Figma to deliver a maintainable and future-friendly experience.',
 		technologies: 'React Native, TypeScript, Figma',
 		image: 'images/SFLivingWage-display2.png'
 	},
@@ -35,7 +35,7 @@ export default [
 		url: 'https://www.kenworthymachine.com/',
 		icon: 'fa-solid fa-wave-square',
 		description:
-			'WWC is a collective of passionate software engineers dedicated to creating impactful digital experiences through innovative design and development, helping clients connect with their audiences in meaningful ways. In a recent project, we delivered an intuitive content management solution with Tina CMS, offering a user-friendly interface and reducing future maintenance costs in the process. To streamline development, we used Chakra UI for CSS, achieving a 30% faster UI creation process and improved accessibility compliance across the app.',
+			'WWC was a collective of passionate software engineers dedicated to creating impactful digital experiences through innovative design and development, helping clients connect with their audiences in meaningful ways. In a showcase project, we built a website for Kenworthy Machine, a company that specializes in manufacturing custom machinery. We delivered an intuitive content management solution with Tina CMS, offering a user-friendly interface and reducing future maintenance costs in the process. To streamline development, we used Chakra UI for CSS, achieving a 30% faster UI creation process and improved accessibility compliance across the app.',
 		technologies: 'Next.js, TypeScript, Figma, Chakra UI, Tina CMS',
 		image: 'images/WWC-display2.png'
 	}

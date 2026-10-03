@@ -31,7 +31,7 @@
 				a Full Stack
 				<span class="font-display text-accent">Developer</span>
 				based in San Francisco. My determination, outgoing nature, and imaginativeness make me a great
-				engineer to have on your team. As a
+				developer to have on your team. As a
 				<a
 					class="text-accent hover:border-b duration-100"
 					href="https://www.brettaustineastman.com/"
@@ -40,8 +40,8 @@
 				>
 					musician
 				</a>, I have always played in groups where everyone works towards a common good. Working on
-				a team of developers is no different. If I’m not coding, I might be out with my wife for a
-				walk in San Francisco, playing drums, or going to a concert.
+				a team of developers is no different. If I’m not coding, you might find me playing drums,
+				out with my wife for a walk in San Francisco, composing music, or going to a concert.
 			</p>
 		</div>
 	</section>
